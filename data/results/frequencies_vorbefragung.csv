@@ -1,0 +1,46 @@
+﻿"group","variable","n","0","1","2","3","4","5"
+"L0","Geschlecht",20,13,7,0,0,0,0
+"L0","Haendigkeit",20,19,1,0,0,0,0
+"L0","Sehschwaeche",20,6,12,2,0,0,0
+"L0","Farbfehlsichtigkeit",20,20,0,0,0,0,0
+"L0","Hoerschwaeche",20,20,0,0,0,0,0
+"L0","Fahrtfrequenz",20,2,2,7,6,3,0
+"L0","Fahrtstrecke",20,2,7,8,3,0,0
+"L0","FrequenzAutobahn",20,3,5,6,5,1,0
+"L0","StreckeAutobahn",20,3,9,8,0,0,0
+"L0","KenntnisAS.CC.",20,0,3,6,11,0,0
+"L0","KenntnisAS.ACC.",20,2,13,3,2,0,0
+"L0","KenntnisAS.Spurhalte.",20,2,12,3,3,0,0
+"L0","KenntnisAS.Stauassistent.",20,7,10,3,0,0,0
+"L0","KenntnisAS.ParkAssist.",20,2,16,2,0,0,0
+"L0","KenntnisAS.Teilautomation.",20,6,10,3,1,0,0
+"L2 H-on","Geschlecht",20,13,7,0,0,0,0
+"L2 H-on","Haendigkeit",20,15,4,1,0,0,0
+"L2 H-on","Sehschwaeche",20,10,10,0,0,0,0
+"L2 H-on","Farbfehlsichtigkeit",20,20,0,0,0,0,0
+"L2 H-on","Hoerschwaeche",20,20,0,0,0,0,0
+"L2 H-on","Fahrtfrequenz",20,1,2,7,7,3,0
+"L2 H-on","Fahrtstrecke",20,1,9,8,2,0,0
+"L2 H-on","FrequenzAutobahn",20,2,4,8,5,1,0
+"L2 H-on","StreckeAutobahn",20,1,12,6,1,0,0
+"L2 H-on","KenntnisAS.CC.",20,1,6,6,7,0,0
+"L2 H-on","KenntnisAS.ACC.",20,2,10,7,1,0,0
+"L2 H-on","KenntnisAS.Spurhalte.",20,1,14,5,0,0,0
+"L2 H-on","KenntnisAS.Stauassistent.",20,5,14,1,0,0,0
+"L2 H-on","KenntnisAS.ParkAssist.",20,1,19,0,0,0,0
+"L2 H-on","KenntnisAS.Teilautomation.",20,5,13,2,0,0,0
+"L2 H-off","Geschlecht",20,13,7,0,0,0,0
+"L2 H-off","Haendigkeit",20,19,1,0,0,0,0
+"L2 H-off","Sehschwaeche",20,8,12,0,0,0,0
+"L2 H-off","Farbfehlsichtigkeit",20,19,1,0,0,0,0
+"L2 H-off","Hoerschwaeche",20,20,0,0,0,0,0
+"L2 H-off","Fahrtfrequenz",20,1,1,7,10,1,0
+"L2 H-off","Fahrtstrecke",20,1,8,11,0,0,0
+"L2 H-off","FrequenzAutobahn",20,1,3,12,4,0,0
+"L2 H-off","StreckeAutobahn",20,1,12,7,0,0,0
+"L2 H-off","KenntnisAS.CC.",20,1,4,7,8,0,0
+"L2 H-off","KenntnisAS.ACC.",20,3,6,7,4,0,0
+"L2 H-off","KenntnisAS.Spurhalte.",20,2,7,8,3,0,0
+"L2 H-off","KenntnisAS.Stauassistent.",20,4,9,4,3,0,0
+"L2 H-off","KenntnisAS.ParkAssist.",20,0,15,4,1,0,0
+"L2 H-off","KenntnisAS.Teilautomation.",20,3,11,5,1,0,0

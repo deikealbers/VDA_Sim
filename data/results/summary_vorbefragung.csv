@@ -1,0 +1,73 @@
+﻿"variable","group","n","mean","sd","median","min","max","frequencies"
+"Geschlecht","L0",NA,NA,NA,NA,NA,NA,"0: 13, 1: 7"
+"Geschlecht","L2 H-off",NA,NA,NA,NA,NA,NA,"0: 13, 1: 7"
+"Geschlecht","L2 H-on",NA,NA,NA,NA,NA,NA,"0: 13, 1: 7"
+"Haendigkeit","L0",NA,NA,NA,NA,NA,NA,"0: 19, 1: 1, 2: 0"
+"Haendigkeit","L2 H-off",NA,NA,NA,NA,NA,NA,"0: 19, 1: 1, 2: 0"
+"Haendigkeit","L2 H-on",NA,NA,NA,NA,NA,NA,"0: 15, 1: 4, 2: 1"
+"Sehschwaeche","L0",NA,NA,NA,NA,NA,NA,"1: 12, 0: 6, 2: 2"
+"Sehschwaeche","L2 H-off",NA,NA,NA,NA,NA,NA,"1: 12, 0: 8, 2: 0"
+"Sehschwaeche","L2 H-on",NA,NA,NA,NA,NA,NA,"0: 10, 1: 10, 2: 0"
+"Farbfehlsichtigkeit","L0",NA,NA,NA,NA,NA,NA,"0: 20, 1: 0"
+"Farbfehlsichtigkeit","L2 H-off",NA,NA,NA,NA,NA,NA,"0: 19, 1: 1"
+"Farbfehlsichtigkeit","L2 H-on",NA,NA,NA,NA,NA,NA,"0: 20, 1: 0"
+"Hoerschwaeche","L0",NA,NA,NA,NA,NA,NA,"0: 20"
+"Hoerschwaeche","L2 H-off",NA,NA,NA,NA,NA,NA,"0: 20"
+"Hoerschwaeche","L2 H-on",NA,NA,NA,NA,NA,NA,"0: 20"
+"Fahrtfrequenz","L0",20,2.3,1.17,2,0,4,"2: 7, 3: 6, 4: 3, 0: 2"
+"Fahrtfrequenz","L2 H-off",20,2.45,0.89,3,0,4,"3: 10, 2: 7, 0: 1, 1: 1"
+"Fahrtfrequenz","L2 H-on",20,2.45,1.05,2.5,0,4,"2: 7, 3: 7, 4: 3, 1: 2"
+"Fahrtstrecke","L0",20,1.6,0.88,2,0,3,"2: 8, 1: 7, 3: 3, 0: 2"
+"Fahrtstrecke","L2 H-off",20,1.5,0.61,2,0,2,"2: 11, 1: 8, 0: 1, 3: 0"
+"Fahrtstrecke","L2 H-on",20,1.55,0.76,1.5,0,3,"1: 9, 2: 8, 3: 2, 0: 1"
+"FrequenzAutobahn","L0",20,1.8,1.15,2,0,4,"2: 6, 1: 5, 3: 5, 0: 3"
+"FrequenzAutobahn","L2 H-off",20,1.95,0.76,2,0,3,"2: 12, 3: 4, 1: 3, 0: 1"
+"FrequenzAutobahn","L2 H-on",20,1.95,1.05,2,0,4,"2: 8, 3: 5, 1: 4, 0: 2"
+"StreckeAutobahn","L0",20,1.25,0.72,1,0,2,"1: 9, 2: 8, 0: 3, 3: 0"
+"StreckeAutobahn","L2 H-off",20,1.3,0.57,1,0,2,"1: 12, 2: 7, 0: 1, 3: 0"
+"StreckeAutobahn","L2 H-on",20,1.35,0.67,1,0,3,"1: 12, 2: 6, 0: 1, 3: 1"
+"KenntnisAS.CC.","L0",20,2.4,0.75,3,1,3,"3: 11, 2: 6, 1: 3, 0: 0"
+"KenntnisAS.CC.","L2 H-off",20,2.1,0.91,2,0,3,"3: 8, 2: 7, 1: 4, 0: 1"
+"KenntnisAS.CC.","L2 H-on",20,1.95,0.94,2,0,3,"3: 7, 1: 6, 2: 6, 0: 1"
+"KenntnisAS.ACC.","L0",20,1.25,0.79,1,0,3,"1: 13, 2: 3, 0: 2, 3: 2"
+"KenntnisAS.ACC.","L2 H-off",20,1.6,0.99,2,0,3,"2: 7, 1: 6, 3: 4, 0: 3"
+"KenntnisAS.ACC.","L2 H-on",20,1.35,0.75,1,0,3,"1: 10, 2: 7, 0: 2, 3: 1"
+"KenntnisAS.Spurhalte.","L0",20,1.35,0.88,1,0,3,"1: 12, 2: 3, 3: 3, 0: 2"
+"KenntnisAS.Spurhalte.","L2 H-off",20,1.6,0.88,2,0,3,"2: 8, 1: 7, 3: 3, 0: 2"
+"KenntnisAS.Spurhalte.","L2 H-on",20,1.2,0.52,1,0,2,"1: 14, 2: 5, 0: 1, 3: 0"
+"KenntnisAS.Stauassistent.","L0",20,0.8,0.7,1,0,2,"1: 10, 0: 7, 2: 3, 3: 0"
+"KenntnisAS.Stauassistent.","L2 H-off",20,1.3,0.98,1,0,3,"1: 9, 0: 4, 2: 4, 3: 3"
+"KenntnisAS.Stauassistent.","L2 H-on",20,0.8,0.52,1,0,2,"1: 14, 0: 5, 2: 1, 3: 0"
+"KenntnisAS.ParkAssist.","L0",20,1,0.46,1,0,2,"1: 16, 0: 2, 2: 2, 3: 0"
+"KenntnisAS.ParkAssist.","L2 H-off",20,1.3,0.57,1,1,3,"1: 15, 2: 4, 3: 1, 0: 0"
+"KenntnisAS.ParkAssist.","L2 H-on",20,0.95,0.22,1,0,1,"1: 19, 0: 1, 2: 0, 3: 0"
+"KenntnisAS.Teilautomation.","L0",20,0.95,0.83,1,0,3,"1: 10, 0: 6, 2: 3, 3: 1"
+"KenntnisAS.Teilautomation.","L2 H-off",20,1.2,0.77,1,0,3,"1: 11, 2: 5, 0: 3, 3: 1"
+"KenntnisAS.Teilautomation.","L2 H-on",20,0.85,0.59,1,0,2,"1: 13, 0: 5, 2: 2, 3: 0"
+"Alter","L0",20,33.6,13.62,26,21,70,NA
+"Alter","L2 H-off",20,32.6,16.81,24,22,74,NA
+"Alter","L2 H-on",20,33.6,13.04,27.5,23,66,NA
+"Fuehrerschein","L0",20,2005.9,13.23,2013.5,1970,2017,NA
+"Fuehrerschein","L2 H-off",20,2007.05,16.39,2015,1966,2017,NA
+"Fuehrerschein","L2 H-on",20,2006.25,12.05,2012,1980,2017,NA
+"DSQ_Speed","L0",20,8.1,3.63,7.5,3,18,NA
+"DSQ_Speed","L2 H-off",20,9,3.21,8.5,4,16,NA
+"DSQ_Speed","L2 H-on",20,8.85,4.27,7,3,16,NA
+"DSQ_Calmness","L0",20,13.15,2.46,13,8,18,NA
+"DSQ_Calmness","L2 H-off",20,12.9,2.25,13,8,16,NA
+"DSQ_Calmness","L2 H-on",20,13.15,2.94,14,8,18,NA
+"DSQ_SocialResistance","L0",20,7.25,2.2,7,2,11,NA
+"DSQ_SocialResistance","L2 H-off",20,6.3,1.89,6,2,10,NA
+"DSQ_SocialResistance","L2 H-on",20,7.6,2.37,7.5,3,12,NA
+"DSQ_Focus","L0",20,13.9,2.15,15,10,17,NA
+"DSQ_Focus","L2 H-off",20,13.4,1.5,14,11,16,NA
+"DSQ_Focus","L2 H-on",20,13.55,1.96,13.5,10,18,NA
+"DSQ_Planning","L0",20,7.1,2.45,7,3,11,NA
+"DSQ_Planning","L2 H-off",20,7.25,1.89,7.5,4,11,NA
+"DSQ_Planning","L2 H-on",20,7.15,3.05,7.5,2,12,NA
+"DSQ_Deviance","L0",20,5.9,1.77,6,3,9,NA
+"DSQ_Deviance","L2 H-off",20,6.3,1.3,6.5,4,9,NA
+"DSQ_Deviance","L2 H-on",20,6.2,1.91,6,3,12,NA
+"ATIS","L0",20,4.29,0.8,4.28,3,6,NA
+"ATIS","L2 H-off",20,4.06,1.1,4.44,2,5,NA
+"ATIS","L2 H-on",20,4.07,1.09,4.22,2,6,NA

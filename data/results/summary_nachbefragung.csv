@@ -1,0 +1,109 @@
+﻿"variable","group","n","mean","sd","median","min","max","frequencies"
+"NDRTs.NDRT1.","L0",20,1.1,1.21,1,0,5,"0: 7, 1: 7, 2: 5, 5: 1"
+"NDRTs.NDRT1.","L2 H-off",20,2.3,1.49,3,0,4,"3: 6, 4: 5, 0: 4, 2: 3"
+"NDRTs.NDRT1.","L2 H-on",20,1.55,1.36,1,0,5,"1: 6, 0: 5, 2: 4, 3: 4"
+"NDRTs.NDRT2.","L0",20,1.35,1.39,1,0,5,"1: 10, 0: 5, 3: 2, 2: 1"
+"NDRTs.NDRT2.","L2 H-off",20,2.9,1.55,3,0,5,"3: 5, 4: 5, 2: 3, 5: 3"
+"NDRTs.NDRT2.","L2 H-on",20,1.4,1.35,1,0,4,"0: 7, 1: 5, 3: 5, 2: 2"
+"NDRTs.NDRT3.","L0",20,2.1,1.89,2,0,5,"0: 7, 3: 4, 2: 3, 5: 3"
+"NDRTs.NDRT3.","L2 H-off",20,3.85,1.18,4,1,5,"4: 7, 5: 7, 3: 3, 2: 2"
+"NDRTs.NDRT3.","L2 H-on",20,3.25,1.71,4,0,5,"4: 9, 5: 4, 0: 3, 3: 2"
+"NDRTs.NDRT4.","L0",20,2.85,1.42,3,0,5,"4: 7, 3: 6, 0: 2, 1: 2"
+"NDRTs.NDRT4.","L2 H-off",20,3.65,1.23,4,1,5,"4: 6, 5: 6, 3: 4, 2: 3"
+"NDRTs.NDRT4.","L2 H-on",20,3.4,1.27,3,0,5,"3: 9, 4: 5, 5: 4, 0: 1"
+"NDRTs.NDRT5.","L0",20,2.2,1.36,2,0,5,"3: 6, 1: 5, 2: 4, 0: 2"
+"NDRTs.NDRT5.","L2 H-off",20,3.65,1.14,4,0,5,"4: 11, 3: 4, 5: 3, 0: 1"
+"NDRTs.NDRT5.","L2 H-on",20,3,1.75,3,0,5,"3: 6, 4: 5, 0: 4, 5: 4"
+"NDRTs.NDRT6.","L0",20,0.5,1,0,0,4,"0: 14, 1: 4, 2: 1, 4: 1"
+"NDRTs.NDRT6.","L2 H-off",20,0.85,1.23,0,0,4,"0: 12, 2: 4, 1: 2, 3: 1"
+"NDRTs.NDRT6.","L2 H-on",20,0.9,1.59,0,0,5,"0: 12, 1: 5, 5: 2, 3: 1"
+"NDRTs.NDRT7.","L0",20,3.4,1.43,4,0,5,"4: 8, 3: 4, 5: 4, 1: 2"
+"NDRTs.NDRT7.","L2 H-off",20,4.05,0.94,4,1,5,"4: 11, 5: 6, 3: 2, 1: 1"
+"NDRTs.NDRT7.","L2 H-on",20,3.45,1.23,3.5,1,5,"3: 5, 4: 5, 5: 5, 2: 4"
+"NDRTs.NDRT8.","L0",20,1.95,1.15,2,0,5,"1: 7, 2: 6, 3: 5, 0: 1"
+"NDRTs.NDRT8.","L2 H-off",20,2.6,1.23,3,0,4,"3: 10, 4: 4, 0: 2, 1: 2"
+"NDRTs.NDRT8.","L2 H-on",20,1.8,1.44,2,0,5,"2: 6, 1: 5, 0: 4, 3: 2"
+"Warnmeldungen.Warnungenzuhaeufig.","L0",0,NA,NA,NA,Inf,-Inf,"0: 0, 1: 0, 2: 0, 3: 0"
+"Warnmeldungen.Warnungenzuhaeufig.","L2 H-off",20,2.4,1.57,2,0,5,"4: 6, 2: 5, 0: 3, 1: 3"
+"Warnmeldungen.Warnungenzuhaeufig.","L2 H-on",20,0.4,0.82,0,0,3,"0: 15, 1: 3, 2: 1, 3: 1"
+"Warnmeldungen.SichermitWarnsystem.","L0",0,NA,NA,NA,Inf,-Inf,"0: 0, 1: 0, 3: 0, 4: 0"
+"Warnmeldungen.SichermitWarnsystem.","L2 H-off",20,5.35,1.31,6,1,6,"6: 14, 5: 3, 1: 1, 3: 1"
+"Warnmeldungen.SichermitWarnsystem.","L2 H-on",20,4.15,2.58,6,0,6,"6: 11, 0: 5, 5: 2, 3: 1"
+"Warnmeldungen.FahrfremdeohneWarnun.","L0",0,NA,NA,NA,Inf,-Inf,"0: 0, 1: 0, 2: 0, 3: 0"
+"Warnmeldungen.FahrfremdeohneWarnun.","L2 H-off",20,4.4,1.9,4.5,0,6,"6: 9, 4: 6, 1: 2, 0: 1"
+"Warnmeldungen.FahrfremdeohneWarnun.","L2 H-on",20,2,2.27,1,0,6,"0: 9, 1: 2, 3: 2, 4: 2"
+"Warnmeldungen.Laestig.","L0",0,NA,NA,NA,Inf,-Inf,"0: 0, 1: 0, 2: 0, 3: 0"
+"Warnmeldungen.Laestig.","L2 H-off",20,2.2,1.54,2,0,5,"2: 6, 4: 5, 1: 4, 0: 3"
+"Warnmeldungen.Laestig.","L2 H-on",20,0.25,0.72,0,0,3,"0: 17, 1: 2, 3: 1, 2: 0"
+"ReaktionaufWarnung.WarumertoentWarnung.","L0",0,NA,NA,NA,Inf,-Inf,"0: 0, 1: 0, 2: 0, 4: 0"
+"ReaktionaufWarnung.WarumertoentWarnung.","L2 H-off",20,5.1,1.07,5,2,6,"6: 9, 5: 6, 4: 4, 2: 1"
+"ReaktionaufWarnung.WarumertoentWarnung.","L2 H-on",20,3.5,2.86,5,0,6,"6: 9, 0: 7, 5: 3, 1: 1"
+"ReaktionaufWarnung.RichtigeReaktion.","L0",0,NA,NA,NA,Inf,-Inf,"0: 0, 1: 0, 2: 0, 4: 0"
+"ReaktionaufWarnung.RichtigeReaktion.","L2 H-off",20,5.15,1.39,6,1,6,"6: 11, 5: 6, 1: 1, 2: 1"
+"ReaktionaufWarnung.RichtigeReaktion.","L2 H-on",20,3.2,2.75,3.5,0,6,"6: 8, 0: 6, 1: 2, 2: 2"
+"ReaktionaufWarnung.BewusstIgnoriert.","L0",0,NA,NA,NA,Inf,-Inf,"0: 0, 1: 0, 2: 0, 4: 0"
+"ReaktionaufWarnung.BewusstIgnoriert.","L2 H-off",20,0.9,1.41,0,0,5,"0: 11, 1: 5, 2: 2, 4: 1"
+"ReaktionaufWarnung.BewusstIgnoriert.","L2 H-on",20,0,0,0,0,0,"0: 20, 1: 0, 2: 0, 4: 0"
+"ReaktionaufWarnung.AufmerksamkeitaufFah.","L0",0,NA,NA,NA,Inf,-Inf,"0: 0, 3: 0, 4: 0, 5: 0"
+"ReaktionaufWarnung.AufmerksamkeitaufFah.","L2 H-off",20,5.2,0.89,5,3,6,"6: 9, 5: 7, 4: 3, 3: 1"
+"ReaktionaufWarnung.AufmerksamkeitaufFah.","L2 H-on",20,3.05,2.93,3.5,0,6,"0: 9, 6: 9, 3: 1, 4: 1"
+"SubjUeberwachguete.1.","L0",20,2.3,1.53,2,0,6,"1: 6, 2: 6, 3: 3, 4: 2"
+"SubjUeberwachguete.1.","L2 H-off",20,3.5,1.43,4,1,6,"4: 7, 2: 4, 5: 4, 1: 2"
+"SubjUeberwachguete.1.","L2 H-on",20,2.7,1.59,2.5,0,6,"2: 5, 1: 4, 3: 4, 4: 3"
+"SubjEinflussSetting","L0",20,0.25,0.44,0,0,1,"0: 15, 1: 5"
+"SubjEinflussSetting","L2 H-off",20,0.35,0.49,0,0,1,"0: 13, 1: 7"
+"SubjEinflussSetting","L2 H-on",20,0.4,0.5,0,0,1,"0: 12, 1: 8"
+"L2PrivNutzung","L0",0,NA,NA,NA,Inf,-Inf,"0: 0, 1: 0, 2: 0, 3: 0"
+"L2PrivNutzung","L2 H-off",19,3.42,0.61,3,2,4,"3: 9, 4: 9, 2: 1, 0: 0"
+"L2PrivNutzung","L2 H-on",20,2.7,1.34,3,0,4,"3: 9, 4: 6, 1: 3, 0: 2"
+"L2Komponenten.Laengs.","L0",0,NA,NA,NA,Inf,-Inf,"1: 0, 2: 0, 3: 0, 4: 0"
+"L2Komponenten.Laengs.","L2 H-off",19,3.63,0.83,4,1,4,"4: 15, 3: 2, 1: 1, 2: 1"
+"L2Komponenten.Laengs.","L2 H-on",20,3.75,0.55,4,2,4,"4: 16, 3: 3, 2: 1, 1: 0"
+"L2Komponenten.Quer.","L0",0,NA,NA,NA,Inf,-Inf,"0: 0, 1: 0, 2: 0, 3: 0"
+"L2Komponenten.Quer.","L2 H-off",19,3.37,0.83,4,1,4,"4: 10, 3: 7, 1: 1, 2: 1"
+"L2Komponenten.Quer.","L2 H-on",20,3.35,1.04,4,0,4,"4: 12, 3: 5, 2: 2, 0: 1"
+"L2Komponenten.Hoff.","L0",0,NA,NA,NA,Inf,-Inf,"1: 0, 2: 0, 3: 0, 4: 0"
+"L2Komponenten.Hoff.","L2 H-off",19,3.21,0.92,3,1,4,"4: 9, 3: 6, 2: 3, 1: 1"
+"L2Komponenten.Hoff.","L2 H-on",0,NA,NA,NA,Inf,-Inf,"1: 0, 2: 0, 3: 0, 4: 0"
+"TiA_overall","L0",0,NA,NA,NA,Inf,-Inf,NA
+"TiA_overall","L2 H-off",20,3.89,0.42,3.84,3,5,NA
+"TiA_overall","L2 H-on",20,3.42,0.57,3.37,2,4,NA
+"TiA_RC","L0",0,NA,NA,NA,Inf,-Inf,NA
+"TiA_RC","L2 H-off",20,3.74,0.54,3.83,2,5,NA
+"TiA_RC","L2 H-on",20,3.23,0.52,3.25,2,4,NA
+"TiA_UP","L0",0,NA,NA,NA,Inf,-Inf,NA
+"TiA_UP","L2 H-off",20,4.25,0.53,4.25,3,5,NA
+"TiA_UP","L2 H-on",20,3.9,0.73,4,2,5,NA
+"TiA_F","L0",0,NA,NA,NA,Inf,-Inf,NA
+"TiA_F","L2 H-off",20,3.45,1.56,4,1,5,NA
+"TiA_F","L2 H-on",20,3.02,1.66,2.5,1,5,NA
+"TiA_IoD","L0",0,NA,NA,NA,Inf,-Inf,NA
+"TiA_IoD","L2 H-off",20,4.53,0.68,5,3,5,NA
+"TiA_IoD","L2 H-on",19,4.21,0.75,4.5,3,5,NA
+"TiA_PtT","L0",0,NA,NA,NA,Inf,-Inf,NA
+"TiA_PtT","L2 H-off",20,3.36,0.7,3.33,2,5,NA
+"TiA_PtT","L2 H-on",20,2.95,0.76,3,2,4,NA
+"TiA_TiA","L0",0,NA,NA,NA,Inf,-Inf,NA
+"TiA_TiA","L2 H-off",20,4.12,0.69,4,2,5,NA
+"TiA_TiA","L2 H-on",20,3.42,1.02,4,2,5,NA
+"CTAM_PE","L0",0,NA,NA,NA,Inf,-Inf,NA
+"CTAM_PE","L2 H-off",20,5.53,1.03,5.17,4,7,NA
+"CTAM_PE","L2 H-on",20,5.08,1.18,5.33,3,7,NA
+"CTAM_EE","L0",0,NA,NA,NA,Inf,-Inf,NA
+"CTAM_EE","L2 H-off",20,6.12,0.99,6.38,3,7,NA
+"CTAM_EE","L2 H-on",20,5.89,0.73,5.88,4,7,NA
+"CTAM_ATT","L0",0,NA,NA,NA,Inf,-Inf,NA
+"CTAM_ATT","L2 H-off",20,5.55,0.95,5.5,4,7,NA
+"CTAM_ATT","L2 H-on",20,4.54,1.22,4.25,2,7,NA
+"CTAM_FC","L0",0,NA,NA,NA,Inf,-Inf,NA
+"CTAM_FC","L2 H-off",20,5.57,1.17,5.83,3,7,NA
+"CTAM_FC","L2 H-on",20,5.15,1.01,5.33,3,7,NA
+"CTAM_ITU","L0",0,NA,NA,NA,Inf,-Inf,NA
+"CTAM_ITU","L2 H-off",20,5.88,1.27,6.17,3,7,NA
+"CTAM_ITU","L2 H-on",20,5.63,1.53,6.17,2,7,NA
+"CTAM_PS","L0",0,NA,NA,NA,Inf,-Inf,NA
+"CTAM_PS","L2 H-off",20,4.99,0.97,4.75,4,7,NA
+"CTAM_PS","L2 H-on",20,4.01,1.13,4,2,6,NA
+"System_sum","L0",0,NA,NA,NA,Inf,-Inf,NA
+"System_sum","L2 H-off",20,0.92,0.08,0.94,1,1,NA
+"System_sum","L2 H-on",20,0.93,0.09,0.95,1,1,NA
