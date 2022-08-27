@@ -56,14 +56,15 @@ nachbefragung <- read.csv("data/preprocessed/nachbefragung_scores.csv", encoding
 #### adjust data set for visualization ####
 nachbefragung <- nachbefragung %>%
   rename(VPNr = X.U.FEFF.VPNr) %>%
-  mutate(group = factor(group, levels = c("L0", "L2 H-on", "L2 H-off"), ordered = TRUE)) %>%
+  mutate(group = factor(group, levels = c("L2 H-on", "L2 H-off", "L0"), ordered = TRUE)) %>%
   mutate(SubjEinflussSetting = factor(SubjEinflussSetting, ordered = TRUE))
 
 nach_L2only <- nachbefragung %>%
   filter(group != "L0")
 
 vorbefragung <- vorbefragung %>%
-  rename(group = X.U.FEFF.group)
+  rename(group = X.U.FEFF.group) %>%
+  mutate(group = factor(group, levels = c("L2 H-on", "L2 H-off", "L0"), ordered = TRUE))
 
 ################## post questionnaire ###############################################################
 
@@ -344,7 +345,7 @@ strip_txt_gpath[1] # example of a gPath for strip title
 ## [1] "strip-t-1.7-5-7-5::strip.1-1-1-1::GRID.titleGrob.5368::GRID.text.5364"
 # Generate some color
 n_cols <- length(strip_bg_gpath)
-fills <- c("#E7E6E6","#FFC000", "#5B9BD5")
+fills <- c("#FFC000", "#5B9BD5", "#E7E6E6")
 # Edit the grobs
 for (i in 1:length(strip_bg_gpath)){
   g <- editGrob(grob = g, gPath = strip_bg_gpath[i], gp = gpar(fill = fills[i]))
@@ -570,7 +571,7 @@ plot_monitoring <- ggplot(nachbefragung, aes(x = group, y=SubjUeberwachguete.1.,
   geom_boxplot(outlier.shape = 21, lwd=0.2, outlier.size = 0.7) +
   stat_summary(fun = mean, geom = "point" , colour="black", size=1, shape = 4) +
   scale_y_continuous(limits = c(0,6), breaks = seq(0,6,1), labels = labels_monitoring) +
-  scale_fill_manual(values = c("#E7E6E6","#FFC000", "#5B9BD5")) +
+  scale_fill_manual(values = c("#FFC000", "#5B9BD5", "#E7E6E6")) +
   labs(y="Response") +
   theme_bw() +
   theme(text=element_text(family = "sans", color="black", size=11, face = "bold"),
@@ -643,7 +644,7 @@ strip_txt_gpath[1] # example of a gPath for strip title
 ## [1] "strip-t-1.7-5-7-5::strip.1-1-1-1::GRID.titleGrob.5368::GRID.text.5364"
 # Generate some color
 n_cols <- length(strip_bg_gpath)
-fills <- c("#E7E6E6","#FFC000", "#5B9BD5")
+fills <- c("#FFC000", "#5B9BD5", "#E7E6E6")
 # Edit the grobs
 for (i in 1:length(strip_bg_gpath)){
   g <- editGrob(grob = g, gPath = strip_bg_gpath[i], gp = gpar(fill = fills[i]))
@@ -857,7 +858,7 @@ plot_age <- ggplot(vorbefragung, aes(x = group, y=Alter, fill = group)) +
   geom_boxplot(outlier.shape = 21, lwd=0.2, outlier.size = 0.7) +
   stat_summary(fun = mean, geom = "point" , colour="black", size=1, shape = 4) +
   scale_y_continuous(limits = c(20,80), breaks = seq(20,80,10)) +
-  scale_fill_manual(values = c("#E7E6E6","#FFC000", "#5B9BD5")) +
+  scale_fill_manual(values = c("#FFC000", "#5B9BD5", "#E7E6E6")) +
   labs(y="Age in years") +
   theme_bw() +
   theme(text=element_text(family = "sans", color="black", size=11, face = "bold"),
@@ -896,7 +897,7 @@ plot_license <- ggplot(vorbefragung, aes(x = group, y=Fuehrerschein, fill = grou
   geom_boxplot(outlier.shape = 21, lwd=0.2, outlier.size = 0.7) +
   stat_summary(fun = mean, geom = "point" , colour="black", size=1, shape = 4) +
   scale_y_continuous(limits = c(1960,2020), breaks = seq(1960,2020,10)) +
-  scale_fill_manual(values = c("#E7E6E6","#FFC000", "#5B9BD5")) +
+  scale_fill_manual(values = c("#FFC000", "#5B9BD5", "#E7E6E6")) +
   labs(y="Year - obtainment of driver's license") +
   theme_bw() +
   theme(text=element_text(family = "sans", color="black", size=11, face = "bold"),
@@ -1018,7 +1019,7 @@ strip_txt_gpath[1] # example of a gPath for strip title
 ## [1] "strip-t-1.7-5-7-5::strip.1-1-1-1::GRID.titleGrob.5368::GRID.text.5364"
 # Generate some color
 n_cols <- length(strip_bg_gpath)
-fills <- c("#E7E6E6","#FFC000", "#5B9BD5")
+fills <- c("#FFC000", "#5B9BD5", "#E7E6E6")
 # Edit the grobs
 for (i in 1:length(strip_bg_gpath)){
   g <- editGrob(grob = g, gPath = strip_bg_gpath[i], gp = gpar(fill = fills[i]))
@@ -1049,7 +1050,7 @@ plot_ATIS <- ggplot(vorbefragung, aes(x = group, y=ATIS, fill = group)) +
   geom_boxplot(outlier.shape = 21, lwd=0.2, outlier.size = 0.7) +
   stat_summary(fun = mean, geom = "point" , colour="black", size=1, shape = 4) +
   scale_y_continuous(limits = c(1,6), breaks = seq(1,6,1)) +
-  scale_fill_manual(values = c("#E7E6E6","#FFC000", "#5B9BD5")) +
+  scale_fill_manual(values = c("#FFC000", "#5B9BD5", "#E7E6E6")) +
   labs(y="Score") +
   theme_bw() +
   theme(text=element_text(family = "sans", color="black", size=11, face = "bold"),
@@ -1144,7 +1145,7 @@ strip_txt_gpath[1] # example of a gPath for strip title
 ## [1] "strip-t-1.7-5-7-5::strip.1-1-1-1::GRID.titleGrob.5368::GRID.text.5364"
 # Generate some color
 n_cols <- length(strip_bg_gpath)
-fills <- c("#E7E6E6","#FFC000", "#5B9BD5")
+fills <- c("#FFC000", "#5B9BD5", "#E7E6E6")
 # Edit the grobs
 for (i in 1:length(strip_bg_gpath)){
   g <- editGrob(grob = g, gPath = strip_bg_gpath[i], gp = gpar(fill = fills[i]))
@@ -1231,7 +1232,7 @@ strip_txt_gpath[1] # example of a gPath for strip title
 ## [1] "strip-t-1.7-5-7-5::strip.1-1-1-1::GRID.titleGrob.5368::GRID.text.5364"
 # Generate some color
 n_cols <- length(strip_bg_gpath)
-fills <- c("#E7E6E6","#FFC000", "#5B9BD5")
+fills <- c("#FFC000", "#5B9BD5", "#E7E6E6")
 # Edit the grobs
 for (i in 1:length(strip_bg_gpath)){
   g <- editGrob(grob = g, gPath = strip_bg_gpath[i], gp = gpar(fill = fills[i]))
@@ -1337,7 +1338,7 @@ strip_txt_gpath[1] # example of a gPath for strip title
 ## [1] "strip-t-1.7-5-7-5::strip.1-1-1-1::GRID.titleGrob.5368::GRID.text.5364"
 # Generate some color
 n_cols <- length(strip_bg_gpath)
-fills <- c("#E7E6E6","#FFC000", "#5B9BD5")
+fills <- c("#FFC000", "#5B9BD5", "#E7E6E6")
 # Edit the grobs
 for (i in 1:length(strip_bg_gpath)){
   g <- editGrob(grob = g, gPath = strip_bg_gpath[i], gp = gpar(fill = fills[i]))
