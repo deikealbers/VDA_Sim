@@ -37,8 +37,8 @@ Sim_skim <- skim_with(numeric = sfl(mean = mean_Sim), append = FALSE)
 
 # Sim colors:
 # L0:				  "#D0CECE"
-# L2 H-on:		"#FFC000"
-# L2 H-off:		"#5B9BD5"
+# L2H-on:		"#FFC000"
+# L2H-off:		"#5B9BD5"
 # 
 # Neutral1:					"#D0CECE"
 # Neutral2(hervorgehoben):	"#AEAAAA"
@@ -56,7 +56,8 @@ nachbefragung <- read.csv("data/preprocessed/nachbefragung_scores.csv", encoding
 #### adjust data set for visualization ####
 nachbefragung <- nachbefragung %>%
   rename(VPNr = X.U.FEFF.VPNr) %>%
-  mutate(group = factor(group, levels = c("L2 H-on", "L2 H-off", "L0"), ordered = TRUE)) %>%
+  mutate(group = ifelse(group == "L2 H-on", "L2H-on", ifelse(group == "L2 H-off", "L2H-off", group))) %>%
+  mutate(group = factor(group, levels = c("L2H-on", "L2H-off", "L0"), ordered = TRUE)) %>%
   mutate(SubjEinflussSetting = factor(SubjEinflussSetting, ordered = TRUE))
 
 nach_L2only <- nachbefragung %>%
@@ -64,7 +65,8 @@ nach_L2only <- nachbefragung %>%
 
 vorbefragung <- vorbefragung %>%
   rename(group = X.U.FEFF.group) %>%
-  mutate(group = factor(group, levels = c("L2 H-on", "L2 H-off", "L0"), ordered = TRUE))
+  mutate(group = ifelse(group == "L2 H-on", "L2H-on", ifelse(group == "L2 H-off", "L2H-off", group))) %>%
+  mutate(group = factor(group, levels = c("L2H-on", "L2H-off", "L0"), ordered = TRUE))
 
 ################## post questionnaire ###############################################################
 
