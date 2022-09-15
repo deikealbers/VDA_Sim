@@ -105,5 +105,5 @@
 "CTAM_PS","L2 H-off",20,4.99,0.97,4.75,4,7,NA
 "CTAM_PS","L2 H-on",20,4.01,1.13,4,2,6,NA
 "System_sum","L0",0,NA,NA,NA,Inf,-Inf,NA
-"System_sum","L2 H-off",20,0.92,0.08,0.94,1,1,NA
-"System_sum","L2 H-on",20,0.93,0.09,0.95,1,1,NA
+"System_sum","L2 H-off",20,0.88,0.11,0.92,1,1,NA
+"System_sum","L2 H-on",20,0.87,0.14,0.89,0,1,NA

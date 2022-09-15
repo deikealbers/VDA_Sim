@@ -441,28 +441,28 @@ SU19 <- 0 # not in FOT
       # SystemUnderstanding_score = sum correct answers ("unsicher" treated as wrong)
 
 nachbefragung_scores0 <- nachbefragung_complete %>%
-  add_column(System01 = ifelse(.$Systemverstaendnis.1. == 2, NA, # statement is correct for On, wrong for off
+  add_column(System01 = ifelse(.$Systemverstaendnis.1. == 2, 0, # statement is correct for On, wrong for off
                                ifelse(.$Systemverstaendnis.1. == SU01_on & .$group == "L2 H-on", 1, 
                                       ifelse(.$Systemverstaendnis.1. == SU01_off  & .$group == "L2 H-off", 1, 
                                              0))), .before = "Systemverstaendnis.1.") %>%
-  add_column(System02 = ifelse(.$Systemverstaendnis.2. == SU02, 1, ifelse(.$Systemverstaendnis.2. == 2, NA, 0)), .before = "Systemverstaendnis.1.") %>%
-  add_column(System03 = ifelse(.$Systemverstaendnis.3. == SU03, 1, ifelse(.$Systemverstaendnis.3. == 2, NA, 0)), .before = "Systemverstaendnis.1.") %>%
-  add_column(System04 = ifelse(.$Systemverstaendnis.4. == SU04, 1, ifelse(.$Systemverstaendnis.4. == 2, NA, 0)), .before = "Systemverstaendnis.1.") %>%
-  add_column(System05 = ifelse(.$Systemverstaendnis.5. == SU05, 1, ifelse(.$Systemverstaendnis.5. == 2, NA, 0)), .before = "Systemverstaendnis.1.") %>%
-  add_column(System06 = ifelse(.$Systemverstaendnis.6. == SU06, 1, ifelse(.$Systemverstaendnis.6. == 2, NA, 0)), .before = "Systemverstaendnis.1.") %>%
-  add_column(System07 = ifelse(.$Systemverstaendnis.7. == SU07, 1, ifelse(.$Systemverstaendnis.7. == 2, NA, 0)), .before = "Systemverstaendnis.1.") %>%
-  add_column(System08 = ifelse(.$Systemverstaendnis.8. == SU08, 1, ifelse(.$Systemverstaendnis.8. == 2, NA, 0)), .before = "Systemverstaendnis.1.") %>%
-  add_column(System09 = ifelse(.$Systemverstaendnis.9. == SU09, 1, ifelse(.$Systemverstaendnis.9. == 2, NA, 0)), .before = "Systemverstaendnis.1.") %>%
-  add_column(System10 = ifelse(.$Systemverstaendnis.10. == SU10, 1, ifelse(.$Systemverstaendnis.10. == 2, NA, 0)), .before = "Systemverstaendnis.1.") %>%
-  add_column(System11 = ifelse(.$Systemverstaendnis.11. == SU11, 1, ifelse(.$Systemverstaendnis.11. == 2, NA, 0)), .before = "Systemverstaendnis.1.") %>%
-  add_column(System12 = ifelse(.$Systemverstaendnis.12. == SU12, 1, ifelse(.$Systemverstaendnis.12. == 2, NA, 0)), .before = "Systemverstaendnis.1.") %>%
-  add_column(System13 = ifelse(.$Systemverstaendnis.13. == SU13, 1, ifelse(.$Systemverstaendnis.13. == 2, NA, 0)), .before = "Systemverstaendnis.1.") %>%
-  add_column(System14 = ifelse(.$Systemverstaendnis.14. == SU14, 1, ifelse(.$Systemverstaendnis.14. == 2, NA, 0)), .before = "Systemverstaendnis.1.") %>%
-  add_column(System15 = ifelse(.$Systemverstaendnis.15. == SU15, 1, ifelse(.$Systemverstaendnis.15. == 2, NA, 0)), .before = "Systemverstaendnis.1.") %>%
-  add_column(System16 = ifelse(.$Systemverstaendnis.16. == SU16, 1, ifelse(.$Systemverstaendnis.16. == 2, NA, 0)), .before = "Systemverstaendnis.1.") %>%
-  add_column(System17 = ifelse(.$Systemverstaendnis.17. == SU17, 1, ifelse(.$Systemverstaendnis.17. == 2, NA, 0)), .before = "Systemverstaendnis.1.") %>%
-  add_column(System18 = ifelse(.$Systemverstaendnis.18. == SU18, 1, ifelse(.$Systemverstaendnis.18. == 2, NA, 0)), .before = "Systemverstaendnis.1.") %>%
-  add_column(System19 = ifelse(.$Systemverstaendnis.19. == SU19, 1, ifelse(.$Systemverstaendnis.19. == 2, NA, 0)), .before = "Systemverstaendnis.1.") %>%
+  add_column(System02 = ifelse(.$Systemverstaendnis.2. == SU02, 1, ifelse(.$Systemverstaendnis.2. == 2, 0, 0)), .before = "Systemverstaendnis.1.") %>%
+  add_column(System03 = ifelse(.$Systemverstaendnis.3. == SU03, 1, ifelse(.$Systemverstaendnis.3. == 2, 0, 0)), .before = "Systemverstaendnis.1.") %>%
+  add_column(System04 = ifelse(.$Systemverstaendnis.4. == SU04, 1, ifelse(.$Systemverstaendnis.4. == 2, 0, 0)), .before = "Systemverstaendnis.1.") %>%
+  add_column(System05 = ifelse(.$Systemverstaendnis.5. == SU05, 1, ifelse(.$Systemverstaendnis.5. == 2, 0, 0)), .before = "Systemverstaendnis.1.") %>%
+  add_column(System06 = ifelse(.$Systemverstaendnis.6. == SU06, 1, ifelse(.$Systemverstaendnis.6. == 2, 0, 0)), .before = "Systemverstaendnis.1.") %>%
+  add_column(System07 = ifelse(.$Systemverstaendnis.7. == SU07, 1, ifelse(.$Systemverstaendnis.7. == 2, 0, 0)), .before = "Systemverstaendnis.1.") %>%
+  add_column(System08 = ifelse(.$Systemverstaendnis.8. == SU08, 1, ifelse(.$Systemverstaendnis.8. == 2, 0, 0)), .before = "Systemverstaendnis.1.") %>%
+  add_column(System09 = ifelse(.$Systemverstaendnis.9. == SU09, 1, ifelse(.$Systemverstaendnis.9. == 2, 0, 0)), .before = "Systemverstaendnis.1.") %>%
+  add_column(System10 = ifelse(.$Systemverstaendnis.10. == SU10, 1, ifelse(.$Systemverstaendnis.10. == 2, 0, 0)), .before = "Systemverstaendnis.1.") %>%
+  add_column(System11 = ifelse(.$Systemverstaendnis.11. == SU11, 1, ifelse(.$Systemverstaendnis.11. == 2, 0, 0)), .before = "Systemverstaendnis.1.") %>%
+  add_column(System12 = ifelse(.$Systemverstaendnis.12. == SU12, 1, ifelse(.$Systemverstaendnis.12. == 2, 0, 0)), .before = "Systemverstaendnis.1.") %>%
+  add_column(System13 = ifelse(.$Systemverstaendnis.13. == SU13, 1, ifelse(.$Systemverstaendnis.13. == 2, 0, 0)), .before = "Systemverstaendnis.1.") %>%
+  add_column(System14 = ifelse(.$Systemverstaendnis.14. == SU14, 1, ifelse(.$Systemverstaendnis.14. == 2, 0, 0)), .before = "Systemverstaendnis.1.") %>%
+  add_column(System15 = ifelse(.$Systemverstaendnis.15. == SU15, 1, ifelse(.$Systemverstaendnis.15. == 2, 0, 0)), .before = "Systemverstaendnis.1.") %>%
+  add_column(System16 = ifelse(.$Systemverstaendnis.16. == SU16, 1, ifelse(.$Systemverstaendnis.16. == 2, 0, 0)), .before = "Systemverstaendnis.1.") %>%
+  add_column(System17 = ifelse(.$Systemverstaendnis.17. == SU17, 1, ifelse(.$Systemverstaendnis.17. == 2, 0, 0)), .before = "Systemverstaendnis.1.") %>%
+  add_column(System18 = ifelse(.$Systemverstaendnis.18. == SU18, 1, ifelse(.$Systemverstaendnis.18. == 2, 0, 0)), .before = "Systemverstaendnis.1.") %>%
+  add_column(System19 = ifelse(.$Systemverstaendnis.19. == SU19, 1, ifelse(.$Systemverstaendnis.19. == 2, 0, 0)), .before = "Systemverstaendnis.1.") %>%
   add_column(System_u_01 = ifelse(.$Systemverstaendnis.1. == 2, 2, # statement is correct for On, wrong for off
                                   ifelse(.$Systemverstaendnis.1. == SU01_on & .$group == "L2 H-on", 1, 
                                          ifelse(.$Systemverstaendnis.1. == SU01_off  & .$group == "L2 H-off", 1, 
