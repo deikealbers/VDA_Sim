@@ -493,6 +493,8 @@ plot_SystemUnderstanding <- ggplot(nach_L2only, aes(x = group, y=100 * System_su
         axis.title.x=element_blank(),
         axis.text.x=element_blank(),
         axis.ticks.x=element_blank(),
+        panel.border=element_blank(),
+        axis.line = element_line(colour = "black"),
         axis.text.y=element_text(color = "black", size=9, face = "plain"))
 plot_SystemUnderstanding
 
@@ -605,6 +607,8 @@ plot_monitoring <- ggplot(nachbefragung, aes(x = group, y=SubjUeberwachguete.1.,
         axis.title.x=element_blank(),
         axis.text.x=element_blank(),
         axis.ticks.x=element_blank(),
+        panel.border=element_blank(),
+        axis.line = element_line(colour = "black"),
         axis.text.y=element_text(color = "black", size=9, face = "plain"))
 plot_monitoring
 
@@ -892,6 +896,8 @@ plot_age <- ggplot(vorbefragung, aes(x = group, y=Alter, fill = group)) +
         axis.title.x=element_blank(),
         axis.text.x=element_blank(),
         axis.ticks.x=element_blank(),
+        panel.border=element_blank(),
+        axis.line = element_line(colour = "black"),
         axis.text.y=element_text(color = "black", size=9, face = "plain"))
 plot_age
 
@@ -931,6 +937,8 @@ plot_license <- ggplot(vorbefragung, aes(x = group, y=Fuehrerschein, fill = grou
         axis.title.x=element_blank(),
         axis.text.x=element_blank(),
         axis.ticks.x=element_blank(),
+        panel.border=element_blank(),
+        axis.line = element_line(colour = "black"),
         axis.text.y=element_text(color = "black", size=9, face = "plain"))
 plot_license
 
@@ -1084,6 +1092,8 @@ plot_ATIS <- ggplot(vorbefragung, aes(x = group, y=ATIS, fill = group)) +
         axis.title.x=element_blank(),
         axis.text.x=element_blank(),
         axis.ticks.x=element_blank(),
+        panel.border=element_blank(),
+        axis.line = element_line(colour = "black"),
         axis.text.y=element_text(color = "black", size=9, face = "plain"))
 plot_ATIS
 
