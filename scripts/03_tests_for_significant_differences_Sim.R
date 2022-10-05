@@ -628,38 +628,69 @@ test_tabCTAM6 <- cbind(name,
 # delete all but test_tabXXX variable, name lists and data sets
 rm(list = ls(pattern = ("_CTAM6")))
 
-#### 1x System Understanding overall (not single questions) ####
+#### 2x System Understanding subscales ####
 
-## System_sum ##
+## SU_System_sum ##
 # levene (homogeneity)
-lev_SUscore <- leveneTest(System_sum ~ group, data = nach_L2)
-tab_lev_SUscore <- data.frame(matrix(unlist(lev_SUscore), nrow=1, byrow=TRUE),stringsAsFactors=FALSE)
-names(tab_lev_SUscore) <- c_lev
+lev_SU_Sys_score <- leveneTest(SU_System_sum ~ group, data = nach_L2)
+tab_lev_SU_Sys_score <- data.frame(matrix(unlist(lev_SU_Sys_score), nrow=1, byrow=TRUE),stringsAsFactors=FALSE)
+names(tab_lev_SU_Sys_score) <- c_lev
 # t-Test (equal variances)
-tT_equal_SUscore <- t.test(nach_L2$System_sum ~ nach_L2$group, var.equal = TRUE, alternative = "two.sided")
-tab_tT_equal_SUscore <- data.frame(matrix(unlist(tT_equal_SUscore), nrow=1, byrow=TRUE),stringsAsFactors=FALSE)
-names(tab_tT_equal_SUscore) <- c_tT_eqvar
+tT_equal_SU_Sys_score <- t.test(nach_L2$SU_System_sum ~ nach_L2$group, var.equal = TRUE, alternative = "two.sided")
+tab_tT_equal_SU_Sys_score <- data.frame(matrix(unlist(tT_equal_SU_Sys_score), nrow=1, byrow=TRUE),stringsAsFactors=FALSE)
+names(tab_tT_equal_SU_Sys_score) <- c_tT_eqvar
 # t-Test (unequal variances)
-tT_unequal_SUscore <- t.test(nach_L2$System_sum ~ nach_L2$group, var.equal = FALSE, alternative = "two.sided")
-tab_tT_unequal_SUscore <- data.frame(matrix(unlist(tT_unequal_SUscore), nrow=1, byrow=TRUE),stringsAsFactors=FALSE)
-names(tab_tT_unequal_SUscore) <- c_tT_uneqvar
+tT_unequal_SU_Sys_score <- t.test(nach_L2$SU_System_sum ~ nach_L2$group, var.equal = FALSE, alternative = "two.sided")
+tab_tT_unequal_SU_Sys_score <- data.frame(matrix(unlist(tT_unequal_SU_Sys_score), nrow=1, byrow=TRUE),stringsAsFactors=FALSE)
+names(tab_tT_unequal_SU_Sys_score) <- c_tT_uneqvar
 # cohen's D effect size
-tT_cD <- cohensD(nach_L2$System_sum ~ nach_L2$group)
+tT_cD <- cohensD(nach_L2$SU_System_sum ~ nach_L2$group)
 # wilcoxon / Mann Whitney U
-wilc_SUscore <- wilcox.test(System_sum ~ group, data = nach_L2, exact = FALSE)
-tab_wilc_SUscore <- data.frame(matrix(unlist(wilc_SUscore), nrow=1, byrow=TRUE),stringsAsFactors=FALSE)
-names(tab_wilc_SUscore) <- c_wilc
+wilc_SU_Sys_score <- wilcox.test(SU_System_sum ~ group, data = nach_L2, exact = FALSE)
+tab_wilc_SU_Sys_score <- data.frame(matrix(unlist(wilc_SU_Sys_score), nrow=1, byrow=TRUE),stringsAsFactors=FALSE)
+names(tab_wilc_SU_Sys_score) <- c_wilc
 # wilcoxon effect size 
-wilc_r <- abs(qnorm(wilc_SUscore$p.value / 2)/sqrt(nrow(nach_L2)))
+wilc_r <- abs(qnorm(wilc_SU_Sys_score$p.value / 2)/sqrt(nrow(nach_L2)))
 wilc_cD <- 2*wilc_r / sqrt(1-wilc_r^2)
 # create data frame  
-name <- c("System_sum")
-test_tabSUscore <- cbind(name, 
-                         tab_lev_SUscore, 
-                         tab_tT_equal_SUscore, tab_tT_unequal_SUscore, tT_cD, 
-                         tab_wilc_SUscore, wilc_r, wilc_cD)
+name <- c("SU_System_sum")
+test_tabSU_Sys_score <- cbind(name, 
+                         tab_lev_SU_Sys_score, 
+                         tab_tT_equal_SU_Sys_score, tab_tT_unequal_SU_Sys_score, tT_cD, 
+                         tab_wilc_SU_Sys_score, wilc_r, wilc_cD)
 # delete all but test_tabXXX variable, name lists and data sets
-rm(list = ls(pattern = ("_SUscore")))
+rm(list = ls(pattern = ("_SU_Sys_score")))
+
+## SU_Role_sum ##
+# levene (homogeneity)
+lev_SU_Role_score <- leveneTest(SU_Role_sum ~ group, data = nach_L2)
+tab_lev_SU_Role_score <- data.frame(matrix(unlist(lev_SU_Role_score), nrow=1, byrow=TRUE),stringsAsFactors=FALSE)
+names(tab_lev_SU_Role_score) <- c_lev
+# t-Test (equal variances)
+tT_equal_SU_Role_score <- t.test(nach_L2$SU_Role_sum ~ nach_L2$group, var.equal = TRUE, alternative = "two.sided")
+tab_tT_equal_SU_Role_score <- data.frame(matrix(unlist(tT_equal_SU_Role_score), nrow=1, byrow=TRUE),stringsAsFactors=FALSE)
+names(tab_tT_equal_SU_Role_score) <- c_tT_eqvar
+# t-Test (unequal variances)
+tT_unequal_SU_Role_score <- t.test(nach_L2$SU_Role_sum ~ nach_L2$group, var.equal = FALSE, alternative = "two.sided")
+tab_tT_unequal_SU_Role_score <- data.frame(matrix(unlist(tT_unequal_SU_Role_score), nrow=1, byrow=TRUE),stringsAsFactors=FALSE)
+names(tab_tT_unequal_SU_Role_score) <- c_tT_uneqvar
+# cohen's D effect size
+tT_cD <- cohensD(nach_L2$SU_Role_sum ~ nach_L2$group)
+# wilcoxon / Mann Whitney U
+wilc_SU_Role_score <- wilcox.test(SU_Role_sum ~ group, data = nach_L2, exact = FALSE)
+tab_wilc_SU_Role_score <- data.frame(matrix(unlist(wilc_SU_Role_score), nrow=1, byrow=TRUE),stringsAsFactors=FALSE)
+names(tab_wilc_SU_Role_score) <- c_wilc
+# wilcoxon effect size 
+wilc_r <- abs(qnorm(wilc_SU_Role_score$p.value / 2)/sqrt(nrow(nach_L2)))
+wilc_cD <- 2*wilc_r / sqrt(1-wilc_r^2)
+# create data frame  
+name <- c("SU_Role_sum")
+test_tabSU_Role_score <- cbind(name, 
+                              tab_lev_SU_Role_score, 
+                              tab_tT_equal_SU_Role_score, tab_tT_unequal_SU_Role_score, tT_cD, 
+                              tab_wilc_SU_Role_score, wilc_r, wilc_cD)
+# delete all but test_tabXXX variable, name lists and data sets
+rm(list = ls(pattern = ("_SU_Role_score")))
 
 #### gather test results #### 
 # combine data frames of tests
@@ -668,7 +699,7 @@ tests_nach0 <- bind_rows(test_tabWarn1, test_tabWarn2, test_tabWarn3, test_tabWa
                          test_tabL2Nutz1, test_tabL2Nutz2, test_tabL2Nutz3,
                          test_tabTiAov,
                          test_tabCTAM1, test_tabCTAM2, test_tabCTAM3, test_tabCTAM4, test_tabCTAM5, test_tabCTAM6,
-                         test_tabSUscore
+                         test_tabSU_Sys_score, test_tabSU_Role_score
                          )
 tests_nach <- tests_nach0 %>%
   select(-c(lev_x1, lev_x2, 

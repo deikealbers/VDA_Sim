@@ -151,13 +151,14 @@ rm(list=setdiff(ls(), c("vorbefragung", "nachbefragung", "summ_vorbefragung",
 #     L2PrivNutzung
 #     L2Komponenten. ... (n = 3)
 #         Ranking --- not in Sim
-# ## interval data, n =  14 ##
+# ## interval data, n =  15 ##
 #         DauerFahrt --- not in Sim
 #         L2AnteilFahrt --- not in Sim
 #         KmVorFahrt --- not in Sim
 #     TiA... (n = 7)
 #     CTAM... (n = 6)
-#     System_sum
+#     SU_System_sum
+#     SU_Role_sum
 
 #### subsets nachbefragung ####
 vars_ordinal <- c("NDRTs.NDRT1.", "NDRTs.NDRT2.", "NDRTs.NDRT3.", "NDRTs.NDRT4.",
@@ -177,7 +178,9 @@ subset_nach_ordinal_nofactors <- nachbefragung %>%
   select(group, vars_ordinal)
 
 subset_nach_interval <- nachbefragung %>%
-  select(group, starts_with("TiA"), starts_with("CTAM"), System_sum)
+  select(group, starts_with("TiA"), starts_with("CTAM"), SU_System_sum, SU_Role_sum) %>%
+  mutate(SU_System_sum = SU_System_sum*100) %>%
+  mutate(SU_Role_sum = SU_Role_sum*100)
 
 #### descriptive summaries nachbefragung ####
 summary_nach_ordinal_factors <- subset_nach_ordinal_factors %>%
@@ -461,11 +464,11 @@ nach_variables = c("NDRTs.NDRT1.", "NDRTs.NDRT2.", "NDRTs.NDRT3.", "NDRTs.NDRT4.
                    "ReaktionaufWarnung.BewusstIgnoriert.", "ReaktionaufWarnung.AufmerksamkeitaufFah.",
                    "L2PrivNutzung", "L2Komponenten.Laengs.",
                    "L2Komponenten.Quer.", "L2Komponenten.Hoff.",
+                   "Role_u_01", "Role_u_02", "Role_u_03", "Role_u_04",
+                   "Role_u_08", "Role_u_09", "Role_u_10", "Role_u_11",
                    "System_u_01", "System_u_02", "System_u_03", "System_u_04",
                    "System_u_05", "System_u_06", "System_u_07", "System_u_08",
-                   "System_u_09", "System_u_10", "System_u_11", "System_u_12",
-                   "System_u_13", "System_u_14", "System_u_15", "System_u_16",
-                   "System_u_17", "System_u_18", "System_u_19")
+                   "System_u_09", "System_u_16", "System_u_17")
 
 ## L0
 nach_L0 <- nachbefragung %>%
